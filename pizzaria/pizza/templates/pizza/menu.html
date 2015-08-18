@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>Welcome to Django Pizza!</title>
+    </head>
+
+    <body>
+        <h1>Django Pizza Place (BY0)</h1>
+        <ul>
+        {% for pizza in pizzas %}
+            <li>
+                {% if pizza.picture  %}    
+                <img src="{{ pizza.picture.url }}" 
+                    width="100px" alt="{{ pizza.name }} picture"/>
+                {% endif %}
+                <h2>{{ pizza.name }} - R$ {{ pizza.price }}</h2> 
+                <div>{{ pizza.ingredients }}</div>
+                <hr>
+            </li>
+        {% empty %}
+            <h2>Ohhhh man! no pizzas for you ...</h2>
+        {% endfor %}
+        </ul>
+    </body>
+</html>
