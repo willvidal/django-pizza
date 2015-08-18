@@ -1,3 +1,13 @@
+from django.http import HttpResponse 
 from django.shortcuts import render
 
-# Create your views here.
+from .models import Pizza
+
+
+def menu(request):
+    pizzas = Pizza.objects.all()
+    result = ''
+    for pizza in pizzas:
+        result += pizza.name
+        result += '<br>'
+    return HttpResponse('Hello World')
