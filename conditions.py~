@@ -1,0 +1,7 @@
+print('Hello World')
+
+salse = 'tomato'
+
+order_number = 42
+
+orde_number = 'other thing'

@@ -6,7 +6,7 @@ pedidos = [
     {
         'nome': 'Marco',
         'sabor': 'presunto'  	  
-    }    	
+    }
 ]
 
 for pedido in pedidos:
