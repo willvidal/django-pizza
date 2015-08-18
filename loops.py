@@ -5,7 +5,7 @@ pedidos = [
     },
     {
         'nome': 'Marco',
-        'sabor': 'presunto'  	  
+        'sabor': 'presunto'
     }
 ]
 
