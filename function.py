@@ -15,6 +15,6 @@ for pedido in pedidos:
     template = 'Nome: {nome}\nSabor: {sabor}'
     print(template.format(**pedido))
     if pedido['obs']:
-        print('Obs: {}'.format(pedido[obs]))
+        print('Obs: {}'.format(pedido['obs']))
 
     print('-'*50)
